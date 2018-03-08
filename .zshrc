@@ -53,7 +53,7 @@ CASE_SENSITIVE="true"
 # Add wisely, as too many plugins slow down shell startup.
 # zsh-syntax-highlighting must be loaded after all widget plugins
 # direnv is recommended to be loaded last
-plugins=(docker docker-compose git virtualenv z zsh-autosuggestions zsh-syntax-highlighting direnv)
+plugins=(docker docker-compose git pyenv virtualenv z zsh-autosuggestions zsh-syntax-highlighting direnv)
 
 source $ZSH/oh-my-zsh.sh
 
