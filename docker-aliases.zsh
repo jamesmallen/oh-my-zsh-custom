@@ -2,11 +2,11 @@ alias dc="docker-compose"
 # Interactive run/remove
 alias drun='docker run -it --rm'
 # Stop all containers
-alias dstop='docker stop $(docker ps -a -q)'
+alias dstop='docker stop $(docker ps -q)'
 # Remove all containers
-alias drm='docker rm $(docker ps -a -q)'
+alias drm='docker rm -v $(docker ps -a -q)'
 # Stop and remove all containers
-alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
+alias drmf='docker rm -vf $(docker ps -a -q)'
 # Remove all images
 alias dri='docker rmi $(docker images -q)'
 # Processes
